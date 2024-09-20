@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: white;
+    }
+    .container{
+        display: grid;
+        text-align: center;
+        color: white;
+grid-template-columns: repeat(5,1fr);
+grid-template-rows: 20vh 50vh 20vh;
+grid-template-areas:
+"h h h h h"
+"sld1 m m m sld2"
+"f f f f f"
+    }
+    .header{
+        grid-area: h;
+    }
+    .sld1{
+        grid-area: sld1;
+    }
+    .main{
+        grid-area: m;
+    }
+    .sld2{
+        grid-area: sld2;
+    }
+    .footed{
+        grid-area: f;
+    }
+    .container div{
+        border: 1px solid black;
+        font-size: 1rem;
+        display: grid;
+        align-items: center;
+        background-color: blue;
+    }
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><i>HEADER</i></div>
+        <div class="sld1"><b>sld1</b></div>
+        <div class="sld2"><u>sld2</u></div>
+        <div class="main">main</div>
+        <div class="footed">footed</div>
+    
+</body>
+
+
+</html>
